@@ -73,7 +73,8 @@ img{
 
 body
 {
-  margin:30px 50px;
+  padding:30px 50px;
+  background-color: rgba(225,225,225,1);
 }
 
 header
