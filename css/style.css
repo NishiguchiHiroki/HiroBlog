@@ -52,9 +52,9 @@ a {
     transition: all  0.3s ease;
 }
 
-/* --------------------------------------------------- */
+/* ------------------- resetの終わり --------------------------- */
 
-/* ---共通--- */
+/* ------------------- 共通の始まり ---------------------------------- */
 h1, h2{
 	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
 }
@@ -69,7 +69,7 @@ img{
   font-family:"Font Awesome 5 Free";
   font-weight: 900;
 }
-/* ---共通--- */
+/* ---------------- 共通の終わり ------------------- */
 
 body
 {
@@ -80,14 +80,12 @@ body
   height:auto;
 }
 
+/* ---------- headerの始まり ---------- */
 header
 {
   display: flex;
   height:110px;
 }
-
-/* ---------- header-logoの始まり ---------- */
-
 .header-logo 
 {
   position: relative;
@@ -137,7 +135,7 @@ header
   height:50px;
 }
 
-/* ---------- header-logoの終わり ---------- */
+/* ---------- headerの終わり ---------- */
 
 
 /* ---------- navの始まり ---------- */
@@ -147,7 +145,6 @@ header
   width:100%;
   margin:8px 0 0 100px;
 }
-
 .navi-container ul li a 
 {
   height:30px;
@@ -160,13 +157,10 @@ header
   float:left;
   margin-right:50px;
 }
-
 .navi-container ul li a:hover
 {
   color:#0000ff;
 }
-
-
 .navi-container ul li::after
 {
   content: "";
@@ -177,7 +171,6 @@ header
   transition: all 0.3s ease;
   margin: 0 auto;
 }
-
 .navi-container ul li:first-child:hover:after,
 .navi-container ul li:nth-child(4):hover:after
 {
@@ -188,7 +181,6 @@ header
   background: #00008b;
   text-align: center;
 }
-
 .navi-container ul li:first-child:hover:after,
 .navi-container ul li:nth-child(4):hover:after
 {
@@ -199,7 +191,6 @@ header
   background: #00008b;
   text-align: center;
 }
-
 .navi-container ul li:nth-child(2):hover:after,
 .navi-container ul li:nth-child(5):hover:after
 {
@@ -210,7 +201,6 @@ header
   background: #00008b;
   text-align: center;
 }
-
 .navi-container ul li:nth-child(3):hover:after
 {
   content: "";
@@ -220,7 +210,6 @@ header
   background: #00008b;
   text-align: center;
 }
-
 
 /* ---------- navの終わり ---------- */
 
@@ -235,28 +224,23 @@ header
   height:18px;
   padding-left:30px;
 }
-
 .social-icon i
 {
   font-size: 16px;
   margin-right:30px;
 }
-
 .social-icon i:hover
 {
   opacity: 0.6;
 }
-
 .facebook
 {
   color:rgb(59,89,152);
 }
-
 .twitter
 {
   color:rgb(29,161,242);
 }
-
 .instagram
 {
   color:#fff;
@@ -265,7 +249,6 @@ header
   background:linear-gradient(135deg, #427eff 0%, #f13f79 70%);
   text-align: center;
 }
-
 .search-icon
 {
   height:18px;
@@ -395,11 +378,11 @@ main
   background: rgba(10, 10, 10, 0.8) !important;
 }
 
-
 /* ----------- pick-contentsの終わり----------------------*/
 
 
 /* ----------- sidebar-containerの始まり -----------------*/
+
 .sidebar-container
 {
   max-width:300px;
@@ -571,4 +554,6 @@ main
   transform:scale(1.05) ;
   transition: transform 2s cubic-bezier(0.2, 0.8, 0.7, 1);
 }
+
 /* ----------- sidebar-containerの終わり -----------------*/
+
