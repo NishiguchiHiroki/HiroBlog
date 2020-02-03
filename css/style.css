@@ -74,7 +74,6 @@ img{
 body
 {
   overflow-x: hidden;
-  padding:30px 50px;
   background-color: rgb(240, 240, 240);
   width:100%;
   height:auto;
@@ -83,8 +82,9 @@ body
 /* ---------- headerの始まり ---------- */
 header
 {
+  padding:30px 50px 30px 50px;
   display: flex;
-  height:110px;
+  height:140px;
 }
 .header-logo 
 {
@@ -261,6 +261,7 @@ header
 
 main
 { 
+  padding:0 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -557,3 +558,35 @@ main
 
 /* ----------- sidebar-containerの終わり -----------------*/
 
+/*------------ footerの始まり -------------------------------- */
+
+footer
+{
+  padding:20px 0;
+  text-align: center;
+  border-top: 1px solid rgb(214, 214, 214);
+}
+footer h2
+{
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.footer-icon
+{
+  width:100%;
+  height:auto;
+  padding:5px 0;
+  margin: 0 auto;
+  letter-spacing: 25px;
+}
+.footer-icon i
+{
+  font-size: 20px;
+  width:21px;
+  padding-left:2px;
+}
+
+
+/*------------ footerの終わり -------------------------------- */
