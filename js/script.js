@@ -35,14 +35,14 @@ $(function(){
   prev.click(function(event) {
     event.preventDefault();
     if ($($slide_box).hasClass('active')){
-      slider(current + 1);
+      slider(current - 1);
     } 
   });
 
   next.click(function(event) {
     event.preventDefault();
     if ($($slide_box).hasClass('active')){
-      slider(current - 1);
+      slider(current + 1);
     } 
   });
 
