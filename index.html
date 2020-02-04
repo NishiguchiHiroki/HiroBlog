@@ -9,11 +9,12 @@
   <lind rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 
-<body id="index.">
+<body id="index.html">
   <header>
     <div class="header-logo">
       <h1>HiroBlog</h1>
@@ -49,7 +50,24 @@
   <main>
     <div class="main-container">
       <div class="pick-contents">
-        <div class="pick-content">
+        <div class="slider-btn">
+          <i class="fas fa-arrow-left",  id="prev"></i>
+          <i class="fas fa-arrow-right", id="next"></i>
+        </div>
+        <div class="pick-content active">
+          <div class="pick-category">
+            <p><a href="#">カテゴリー</a></p>
+          </div>
+          <a href="#"><img src="images/logo.png" alt="", width="180px",height="140px"></a>
+          <div class="pick-caption">
+            <a href="">
+              <h3>Hello World</h3>
+              <p>2019年から本格的にプログラミングの勉強を始め、Rubyを使ったエンジニアとして活動中。やらなかった後悔をなくすように日々チャレンジしています。</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="pick-content active">
           <div class="pick-category">
             <p><a href="#">カテゴリー</a></p>
           </div>
@@ -62,7 +80,7 @@
           </div>
         </div>
 
-        <div class="pick-content">
+        <div class="pick-content active">
           <div class="pick-category">
             <p><a href="#">カテゴリー</a></p>
           </div>
@@ -75,7 +93,7 @@
           </div>
         </div>
 
-        <div class="pick-content">
+        <div class="pick-content active">
           <div class="pick-category">
             <p><a href="#">カテゴリー</a></p>
           </div>
@@ -88,11 +106,24 @@
           </div>
         </div>
 
-        <div class="pick-content">
+        <div class="pick-content active">
           <div class="pick-category">
             <p><a href="#">カテゴリー</a></p>
           </div>
           <a href="#"><img src="images/Cuhtij6h.png" alt="", width="180px",height="140px"></a>
+          <div class="pick-caption">
+            <a href="">
+              <h3>Hello World</h3>
+              <p>2019年から本格的にプログラミングの勉強を始め、Rubyを使ったエンジニアとして活動中。やらなかった後悔をなくすように日々チャレンジしています。</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="pick-content active">
+          <div class="pick-category">
+            <p><a href="#">カテゴリー</a></p>
+          </div>
+          <a href="#"><img src="images/logo.png" alt="", width="180px",height="140px"></a>
           <div class="pick-caption">
             <a href="">
               <h3>Hello World</h3>
@@ -102,12 +133,12 @@
         </div>
 
         <div class="progress-bar">
-          <span class="progress-active"></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="progress-active", id="pg"></span>
+          <span class="progress-active", id="pg"></span>
+          <span class="progress-active" id="pg"></span>
+          <span class="progress-active" id="pg"></span>
+          <span class="progress-active" id="pg"></span>
+          <span class="progress-active" id="pg"></span>
         </div> 
       </div>
     </div>
@@ -200,7 +231,7 @@
   </main>
   
   <footer>
-    <h2>© 2020 NISHIGUCHI HIROKI.com All Rights Reserved.</h2>
+    <h2>© 2020 NISHIGUCHI HIROKI_BLOG All Rights Reserved.</h2>
     <div class="footer-icon">
       <a href=""><i class="fab fa-facebook-f facebook"></i></a>
       <a href=""><i class="fab fa-twitter twitter"></i></a>
@@ -208,5 +239,6 @@
       <a href=""><i class="fab fa-github"></i></a>
     </div>
   </footer>
+
 </body>
 </html>

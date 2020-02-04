@@ -69,6 +69,13 @@ img{
   font-family:"Font Awesome 5 Free";
   font-weight: 900;
 }
+.active {
+  display: block !important;
+}
+.close {
+  display: none;
+}
+
 /* ---------------- 共通の終わり ------------------- */
 
 body
@@ -274,23 +281,59 @@ main
 {
   display: flex;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.fa-arrow-left
+{
+  position: absolute;
+  bottom:0;
+  left:30%;
+  padding-top: 3px;
+  transform: translate(-50%,-50%);
+  font-family: "Font Awesome 5 Free";
+  font-size: 26px;
+  background: rgb(223, 223, 223);
+  width:34px;
+  height:34px;
+  text-align: center;
+  border-radius: 50%;
+  color:rgba(0, 0, 139,0.6);
+}
+.fa-arrow-right
+{
+  position: absolute;
+  bottom:0;
+  right:30%;
+  padding-top: 3px;
+  transform: translate(0,-50%);
+  font-family: "Font Awesome 5 Free";
+  font-size: 26px;
+  background: rgb(223, 223, 223);
+  width:34px;
+  height:34px;
+  text-align: center;
+  border-radius: 50%;
+  color:rgba(0, 0, 139,0.6);
 }
 .pick-content
 {
+  display: none;
   position: relative;
-  max-width:190px;
+  width:190px;
   height:140px;
   box-sizing: border-box;
   margin: 0 25px;
   box-shadow: 0 0 10px 5px rgba(210, 210, 210,0.5);
 }
+
 .pick-content img 
 {
   background: #fff;
   padding:5px;
   margin: 0 auto;
-  width:160px;
+  min-width:160px;
   height:140px;
 }
 .pick-content a
@@ -302,7 +345,6 @@ main
 {
   opacity: 0.8;
 }
-
 .pick-category
 {
   position: absolute;
@@ -373,10 +415,6 @@ main
   border: 1px solid rgba(54, 54, 54, 0.2);
   float: left;
   margin-right: 10px;
-}
-.progress-active
-{
-  background: rgba(10, 10, 10, 0.8) !important;
 }
 
 /* ----------- pick-contentsの終わり----------------------*/
