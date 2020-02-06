@@ -1,6 +1,6 @@
 
 html{
- font-size: 16px;
+ font-size: 16rgb(0%, 100%, 0%)x;
 }
 
 html * {
@@ -38,7 +38,8 @@ time, mark, audio, video {
     outline:0;
     font-size:100%;
     vertical-align:baseline;
-    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    font-family: "Noto, Hiragino Sans,Helvetica,Arial,sans-serif";
+    color:rgb(101, 101, 101);
 }
 
 a {
@@ -48,7 +49,7 @@ a {
     vertical-align:baseline;
     background:transparent;
     text-decoration: none;
-    color:#000;
+    color:rgb(99, 99, 99);
     transition: all  0.3s ease;
 }
 
@@ -82,7 +83,7 @@ body
 {
   overflow-x: hidden;
   background-color: rgb(240, 240, 240);
-  width:100%;
+  width:100vw;
   height:auto;
 }
 
@@ -271,11 +272,12 @@ main
   padding:0 50px;
   display: flex;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 .main-container
 {
   width:100%;
-  max-width:850px;
+  max-width:800px;
 }
 .swiper-container
 {
@@ -358,7 +360,7 @@ main
 .pick-category a
 {
   font-size: 10px;
-  color:#fff;
+  color:rgb(230, 230, 230);
 }
 .pick-category a:hover
 {
@@ -383,14 +385,17 @@ main
 .pick-caption h3
 {
   margin: 0 auto;
+
   width:120px;
   text-align: center;
   border-bottom: 1px solid rgba(225,225,225,0.9);
+  color:rgb(220, 218, 218);
 }
 .pick-caption p
 {
   font-size: 10px;
   letter-spacing: 1px;
+  color:rgb(220, 220, 220);
 }
 .pick-caption:hover
 {
@@ -446,6 +451,133 @@ main
 }
 
 /* ----------- pick-contentsの終わり----------------------*/
+
+
+/* ----------- article-containerの始まり ---------------------- */
+
+.heading
+{
+  width:100%;
+  margin: 50px 0 ;
+  padding:10px 0;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.article-content
+{
+  width:100%;
+  max-width: 800px;
+  padding:0 50px;
+  height:auto;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 0 10px 5px rgba(210, 210, 210,0.5);
+  margin-bottom: 65px;
+}
+.article-box
+{
+  width:100%;
+  max-width:550px;
+  margin: 0 auto;
+}
+.article-title
+{
+  width:100%;
+  padding:30px 0 30px 0;
+  text-align: center;
+  display: inline-block;
+}
+.day-time
+{
+  display: block;
+  letter-spacing: 2px;
+  font-size: 16px;
+  float: left;
+  color:#7B7B7B;
+}
+.article-title h3
+{
+  clear: both;
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  max-width:500px;
+  padding-top: 15px;
+  margin: 0 auto;
+  color: #7B7B7B;
+}
+.article-image
+{
+  width:100%;
+  height:auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.article-image img
+{
+  display: inline-block;
+  text-align: center;
+  width:100%;
+  max-width:550px;
+  max-height:350px;
+}
+.article-category
+{
+  padding-top:20px;
+}
+.article-category p
+{
+  float:left;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 15px;
+  padding:5px 10px;
+  border: 1px solid rgba(0, 0, 255, 0.8);
+  background:rgba(0, 0, 255, 0.8);
+  color:rgb(240, 240, 240);
+  transition: 0.6s;
+}
+.article-category p:hover
+{
+  background: #fff;
+  color:rgb(0, 0, 255);
+  border-color: #00008b;
+}
+.article-description
+{
+  padding:30px 30px 0 30px;
+  clear: both;
+}
+.article-description p
+{
+  font-size: 18px;
+}
+.artile-detail
+{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0 50px 0;
+}
+.artile-detail a
+{
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #0000ff;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.artile-detail a:hover
+{
+  background: #00008b;
+  color:rgb(255, 255, 255);
+}
+
+
+/* ----------- article-containerの終わり ---------------------- */
 
 
 /* ----------- sidebar-containerの始まり -----------------*/
@@ -537,7 +669,7 @@ main
   font-weight: 600;
   color:rgb(31, 31, 31);
 }
-.article
+.popular
 {
   position: relative;
   display: flex;
@@ -545,36 +677,24 @@ main
   border-bottom: double 7px #dbdbdb;
   overflow: hidden;
 }
-/* .article-image::before
-{
-  position: absolute;
-  content: "";
-  top:-5px;
-  left:-20px;
-  display: inline-block;
-  border: 20px solid transparent;
-  transform: rotate(225deg);
-  border-left: 20px solid rgb(255, 255, 255);
-  z-index: 10;
-} */
-.article-image img
+.popular-image img
 {
   flex: 0 0 30%;
   height:74px;
 }
-.article-text
+.popular-text
 {
   flex: 0 0 70%;
   height:74px;
   font-size: 12px;
   overflow: hidden;
 }
-.article-text h4
+.popular-text h4
 {
   text-align: center;
   font-size: 14px;
 }
-.article-text:hover
+.popular-text:hover
 {
   color: rgba(0, 0, 170, 0.8);
 }
