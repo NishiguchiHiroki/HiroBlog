@@ -63,4 +63,23 @@ $(function(){
     });
   } )(jQuery);
   
+  $(function(){
+    var ad_list = $('#ad_list')
+    var ad_scroll_H = ad_list.offset().top;
+    var ad_class = $('.advertisement-list');
+    var windowWidth = parseInt(window.innerWidth);
+    var replaceWidth = 1024;
+
+    if(windowWidth >= replaceWidth){
+    $(window).scroll(function() {
+      var sc = $(this).scrollTop();
+      if(sc >= ad_scroll_H){
+        ad_list.addClass('fixed');
+      }else{
+        ad_list.removeClass('fixed');
+      }
+    });
+  }
+    
   });
+});
