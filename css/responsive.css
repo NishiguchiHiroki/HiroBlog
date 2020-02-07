@@ -441,6 +441,7 @@
   .ad-listbox{
     width:300px;
     height:250px;
+    margin: 0 auto;
   }
   .ad-listbox:last-child{
     display: none;
@@ -454,5 +455,10 @@
   {
     right:20px;
   }
+  .popular-image img
+{
+  height:70px;
+}
+
   
 }
