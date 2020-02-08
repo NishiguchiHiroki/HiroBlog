@@ -73,8 +73,10 @@ $(function(){
     if(windowWidth >= replaceWidth){
     $(window).scroll(function() {
       var sc = $(this).scrollTop();
+      console.log(sc);
       if(sc >= ad_scroll_H){
         ad_list.addClass('fixed');
+        
       }else{
         ad_list.removeClass('fixed');
       }
