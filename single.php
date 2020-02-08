@@ -15,12 +15,12 @@
           <a href=""><i class="fab fa-twitter s_twitter"><span>twitter</span></i></a>
           <div class="insta-btn">
           <a href="https://www.instagram.com/nissyan?ref=badge">
-            <span>instagram</span>
+            <span>Instagram</span>
             <i class="fab fa-instagram s_instagram"></i>
             <div class="insta_bg"></div>
           </a>
           </div>
-          <a href=""><i class="fab fa-github s_github"><span>Git hub</span></i></a>
+          <a href=""><i class="fab fa-github s_github"><span>Git Hub</span></i></a>
         </div>
       </div>
     </section>
